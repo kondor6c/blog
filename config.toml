@@ -1,0 +1,67 @@
+baseURL = "https://kondor6c.github.io/"
+
+languageCode = "en-us"
+DefaultContentLanguage = "en"
+title = "Web Log"
+theme = "academic"
+themesdir = "themes/"
+hasCJKLanguage = false
+publishDir = "kondor6c.github.io"
+enableEmoji = false
+
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir= false
+enableMissingTranslationPlaceholders = false
+
+[Languages]
+  [Languages.en]
+    title = "blog"
+    weight = 1
+    languageName = "English"
+  [Languages.en]
+    title = "full documents"
+    weight = 1
+    languageName = "English"
+  [Languages.en]
+    title = "about"
+    weight = 1
+    languageName = "English"
+  [Languages.en]
+    title = "notes"
+    weight = 1
+    languageName = "English"
+  
+[params]
+  day_night = true
+  editURL = "https://github.com/kondor6c/content"
+  color_theme = "forest"
+  gravatar = false
+  reading_time = false
+  contact_links = [
+    {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/kondor6c"},
+  ]
+  [search]
+    engine = 1
+  [projects]
+    post_view = 2
+    publication_view = 2
+    talk_view = 2
+
+
+  enableGitInfo = true
+  ordersectionsby = "weight" # ordersectionsby = "title"
+  disableHomeIcon = false # default is false
+  disableSearch = false # default is false
+  disableNavChevron = false # set true to hide next/prev chevron, default is false
+  highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
+  menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
+  
+[outputs]
+  home = [ "HTML", "RSS", "JSON"]
+[[menu.shortcuts]]
+  pre = "<h3>More</h3>"
+  name = "<i class='fa fa-github'></i> <label>Github repo</label>"
+  identifier = "ds"
+  url = "https://github.com/kondor6c/"
+  weight = 10
+

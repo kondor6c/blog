@@ -1,0 +1,21 @@
+name: validate
+on:
+  push:
+    branches:
+      - 'wip,*'
+env:
+  HUGO_THEME: docDock  
+
+jobs:
+  formatting-check:
+    runs-on: ubuntu-latest
+    container:
+      image: quay.io/oci/pandoc
+      volumes:
+        -  ${{ github.workspace }}:/out
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
+    - name: pandoc check
+      run: --verbose -f html --fail-if-warnings -o /out blog/posts/

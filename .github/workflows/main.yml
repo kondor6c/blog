@@ -1,0 +1,26 @@
+name: validate
+on:
+  push:
+    branches:
+      - 'wip,*'
+env:
+  HUGO_THEME: docDock  
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    container:
+      image: quay.io/oci/pandoc
+      volumes:
+        -  ${{ github.workspace }}:/out
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        fetch-depth: 1
+    - uses: actions/checkout@v1
+      with:
+        path: Hugo Academic
+        fetch-depth: 1
+    - name: hugo
+      run: hugo -t ${HUGO_THEME}
+
