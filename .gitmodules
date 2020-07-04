@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:kondor6c/kondor6c.github.io.git
+	branch = master
