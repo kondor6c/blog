@@ -1,6 +1,7 @@
 ---
 Title: Blog
 Menu: Main
+Weight: 5
 ---
 
 ==========

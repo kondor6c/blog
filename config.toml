@@ -1,48 +1,24 @@
 baseURL = "https://kondor6c.github.io/"
-
 languageCode = "en-us"
 DefaultContentLanguage = "en"
-title = "Web Log"
-theme = [ "learn" ]
+title = "Web Book"
+theme = [ "mainroad" ]
 themesdir = "themes/"
+paginate = "10"
 hasCJKLanguage = false
 publishDir = "kondor6c.github.io"
 enableEmoji = false
+pygmentsStyle = "tango"
+pygmentsUseClasses = false
 pygmentsCodeFences = true
-pygmentsStyle = "monokailight"
+pygmentsCodefencesGuessSyntax = true
 
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir= false
 enableMissingTranslationPlaceholders = false
-
-  
-[params]
-  day_night = true
-  editURL = "https://github.com/kondor6c/content"
-  color_theme = "blue"
-  gravatar = false
-  reading_time = false
-  contact_links = [
-    {icon = "keybase", icon_pack = "fab", name = "Chat on Keybase", link = "https://keybase.io/kondor6c"},
-  ]
-  [search]
-    engine = 1
-  [projects]
-    post_view = 2
-    publication_view = 2
-    talk_view = 2
-
-
-  enableGitInfo = true
-  ordersectionsby = "weight" # ordersectionsby = "title"
-  disableHomeIcon = false # default is false
-  disableSearch = false # default is false
-  disableNavChevron = false # set true to hide next/prev chevron, default is false
-  highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
-  menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
-  
 [outputs]
-  home = [ "HTML", "RSS", "JSON"]
+home = [ "HTML", "RSS"]
+
 [deployment]
 order = [".jpg$", ".gif$"]
 [[deployment.targets]]
@@ -53,54 +29,37 @@ name = "github"
 
 [params]
 author = "Kevin Faulkner"
+copyright = "Kevin Faulkner"
 description = "simple helpful log of information"
-disableHomeIcon = false # default is false
 disableLanguageSwitchingButton = true
 disableSearch = false # default is false
 disableNavChevron = false # set true to hide next/prev chevron, default is false
 editURL = "https://github.com/kondor6c/blog"
 enableGitInfo = true
-highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
-menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
+opengraph = false
+twitter_cards = false
 ordersectionsby = "weight" # ordersectionsby = "title"
-showVisitedLinks = true # default is false
-themeVariant = "blue" # choose theme variant "green", "gold" , "gray", "blue" (default)
+themeVariant = "blue"
+[Params.widgets.social]
+telegram = "kondor6c"
+github = "kondor6c"
+gitlab = "kondor6c"
+bitbucket = "kondor6c"
+email = "kondor6c@lazytree.us"
 
-[outputs]
-home = [ "HTML", "RSS", "JSON"]
+[Params.logo]
+image = "static/images/tux_logo.png"
+[Params.sidebar]
+home = "right" # Configure layout for home page
+list = "left"  # Configure layout for list pages
+single = false 
+widgets = ["search", "recent", "categories", "taglist", "social"]
+
 
 [[menu.shortcuts]]
 name = "Main"
 url = "/"
 weight = 2
-#[[menu.shortcuts]]
-#name = "Blog Posts"
-#identifier = "posts"
-#url = "/posts"
-#weight = 5
-#[[menu.shortcuts]]
-#name = "Cheetsheets"
-#identifier = "sheets"
-#url = "/cheetsheets"
-#weight = 10
-#[[menu.shortcuts]]
-#name = "Documents"
-#identifier = "docs"
-#url = "/docs"
-#weight = 12
-#[[menu.shortcuts]]
-#name = "Personal Info and Contact"
-#identifier = "personal"
-#weight = 15
-#[[menu.shortcuts]]
-#name = "Notes"
-#identifier = "notes"
-#url = "/notes"
-#weight = 55
-#[[menu.shortcuts]]
-#name = "<i class='fa fa-github'></i> <label>Github repo</label>"
-#identifier = "dots"
-#weight = 20
 [[menu.shortcuts]]
 name = "<i class='fas fa-tags'></i> Tags"
 url = "/tags"
