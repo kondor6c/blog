@@ -1,13 +1,28 @@
-##############
-Trust with TLS
-##############
-:date: Wed, 03 Feb 2019 00:54:56 -0400
-:modified: Wed, 03 Feb 2019 00:54:56 -0400
-:category: docs, features
-:tags: comprhensive
-:slug: Trust_with_TLS
-:authors: Kevin Faulkner
-:summary: An expanding document that should fully describe many components to TLS, geared for quick application
+---
+date: Wed, 03 Feb 2019 00:54:56 -0400
+modified: Wed, 03 Feb 2019 00:54:56 -0400
+tags:
+  - comprhensive
+  - TLS
+  - PKI
+  - openssl
+  - gnutls
+slug: Trust_TLS
+categories:
+  - documents
+  - articles
+  - mutable
+  - maintained
+featured: true
+title: Trust TLS
+authors: Kevin Faulkner
+summary: An expanding document that should fully describe many components to TLS, geared for quick application
+---
+
+#########
+Trust TLS
+#########
+A full document meant to help others with PKI and TLS
 
 ******
 Trust!

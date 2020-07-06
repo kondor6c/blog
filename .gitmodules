@@ -2,3 +2,9 @@
 	path = public
 	url = git@github.com:kondor6c/kondor6c.github.io.git
 	branch = master
+[submodule "themes/zen"]
+	path = themes/zen
+	url = git@github.com:frjo/hugo-theme-zen.git
+[submodule "themes/learn"]
+	path = themes/learn
+	url = git@github.com:matcornic/hugo-theme-learn.git

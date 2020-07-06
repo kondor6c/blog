@@ -3,7 +3,7 @@ baseURL = "https://kondor6c.github.io/"
 languageCode = "en-us"
 DefaultContentLanguage = "en"
 title = "Web Log"
-theme = "learn"
+theme = [ "learn" ]
 themesdir = "themes/"
 hasCJKLanguage = false
 publishDir = "kondor6c.github.io"
@@ -51,41 +51,60 @@ name = "github"
 [[deployment.targets]]
 name = "github"
 
-[Languages]
-[Languages.en]
-title = "blog"
-weight = 1
-languageName = "English"
-# 
-# [Languages.fr]
-# title = "Documentation du thème docDock"
-# weight = 2
-# languageName = "Français"
-
-
-
-
 [params]
-editURL = "https://github.com/kondor6c/content"
-showVisitedLinks = true # default is false
-themeStyle = "flex" # "original" or "flex" # default "flex"
-themeVariant = "" # choose theme variant "green", "gold" , "gray", "blue" (default)
-ordersectionsby = "weight" # ordersectionsby = "title"
+author = "Kevin Faulkner"
+description = "simple helpful log of information"
 disableHomeIcon = false # default is false
+disableLanguageSwitchingButton = true
 disableSearch = false # default is false
 disableNavChevron = false # set true to hide next/prev chevron, default is false
+editURL = "https://github.com/kondor6c/blog"
+enableGitInfo = true
 highlightClientSide = false # set true to use highlight.pack.js instead of the default hugo chroma highlighter
 menushortcutsnewtab = false # set true to open shortcuts links to a new tab/window
-enableGitInfo = true
+ordersectionsby = "weight" # ordersectionsby = "title"
+showVisitedLinks = true # default is false
+themeVariant = "blue" # choose theme variant "green", "gold" , "gray", "blue" (default)
 
 [outputs]
 home = [ "HTML", "RSS", "JSON"]
 
-
 [[menu.shortcuts]]
-pre = "<h3>More</h3>"
-name = "<i class='fa fa-github'></i> <label>Github repo</label>"
-identifier = "ds"
-url = "https://github.com/kondor6c/"
-weight = 10
+name = "Main"
+url = "/"
+weight = 2
+#[[menu.shortcuts]]
+#name = "Blog Posts"
+#identifier = "posts"
+#url = "/posts"
+#weight = 5
+#[[menu.shortcuts]]
+#name = "Cheetsheets"
+#identifier = "sheets"
+#url = "/cheetsheets"
+#weight = 10
+#[[menu.shortcuts]]
+#name = "Documents"
+#identifier = "docs"
+#url = "/docs"
+#weight = 12
+#[[menu.shortcuts]]
+#name = "Personal Info and Contact"
+#identifier = "personal"
+#weight = 15
+#[[menu.shortcuts]]
+#name = "Notes"
+#identifier = "notes"
+#url = "/notes"
+#weight = 55
+#[[menu.shortcuts]]
+#name = "<i class='fa fa-github'></i> <label>Github repo</label>"
+#identifier = "dots"
+#weight = 20
+[[menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> Tags"
+url = "/tags"
+weight = 30
+
+
 
