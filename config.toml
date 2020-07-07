@@ -22,7 +22,7 @@ home = [ "HTML", "RSS"]
 [deployment]
 order = [".jpg$", ".gif$"]
 [[deployment.targets]]
-name = "github"
+name = "gitlab"
 
 [[deployment.targets]]
 name = "github"

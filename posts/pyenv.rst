@@ -1,12 +1,13 @@
-+++
-title = "pyenv" 
-date = "2016-03-27"
-category = "devops"
-tags = [ "linux" ]
-slug = "pyenv"
-description = "Version managers for languages"
+---
+title: "pyenv" 
+date: "2016-03-27"
+tags:
+  - "linux"
+slug: "pyenv"
+description: "Version managers for languages"
 
-+++
+---
+
 
 Version Managers
 ================
@@ -19,5 +20,5 @@ We don't know what the future holds, if we make our projects explicit on the ver
 
 
 I frequently try to argue the other side, and two arguments I can see is that it's easier to just do "yum install ruby-devel" or that it increases the likelihood that package requirements/dependencies become stale. The ease of use of many version managers are increasingly more simple, all you need to do is switch to the development user and pipe the install script from curl to bash. Now the former I might have to agree with you on, and generally you could specify in the requirements that a "greater than" version is acceptable and lock it when you feel it is a concern.
-To add credibility to my statements I have used [[https://rvm.io/|RVM]] in production in these examples gitlab, a custom application, and with Canvas LMS. I have code in place for [[https://github.com/creationix/nvm|NVM]] (NodeJS) and I am investigating [[https://github.com/yyuu/pyenv-installer|pyenv]] for Python.
+To add credibility to my statements I have used `RVM <https://rvm.io/> in production in these examples gitlab, a custom application, and with Canvas LMS. I have code in place for `NVM <https://github.com/creationix/nvm>` (NodeJS) and I am investigating `pyenv <https://github.com/yyuu/pyenv-installer>` for Python.
 
